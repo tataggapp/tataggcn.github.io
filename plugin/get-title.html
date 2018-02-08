@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>井井有条 | 首页 </title>
+    <title>井井有条 | 获取标题插件 </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,7 +24,7 @@
   </head>
   <body>
 
-   <script>window.__INITIAL_STATE__ = {"page":{"title":"首页","path":"index.html"},"data":{"navigation":{"logo":{"text":"井井有条","type":"link","path":"index.html"},"main":[{"text":"快速指南","type":"link","path":"doc/quick-start.html"},{"text":"如何添加条目","type":"link","path":"doc/how-to-add-an-entry.html"},{"text":"使用插件","type":"link","path":"doc/using-plugins.html"},{"text":"插件","type":"label"},{"text":"添加标签","type":"link","path":"plugin/add-tag.html"},{"text":"获取标题","type":"link","path":"plugin/get-title.html"},{"text":"新浪微博","type":"link","path":"plugin/sina-weibo.html"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"获取标题插件","path":"plugin/get-title.html"},"data":{"navigation":{"logo":{"text":"井井有条","type":"link","path":"index.html"},"main":[{"text":"快速指南","type":"link","path":"doc/quick-start.html"},{"text":"如何添加条目","type":"link","path":"doc/how-to-add-an-entry.html"},{"text":"使用插件","type":"link","path":"doc/using-plugins.html"},{"text":"插件","type":"label"},{"text":"添加标签","type":"link","path":"plugin/add-tag.html"},{"text":"获取标题","type":"link","path":"plugin/get-title.html"},{"text":"新浪微博","type":"link","path":"plugin/sina-weibo.html"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
 
     <div id="react-navigation-root"><div class="doc-navigation" data-reactroot=""><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"/><span class="doc-navbar__logo__text">井井有条</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
     <div class="doc-content">
@@ -32,9 +32,12 @@
     <div class="dc-card">
       <div id="react-search-results-root"></div>
       <div id="page-content" class="doc-formatting">
-        <div align="center"> <img src="images/home_bg.jpg" alt=""> </div>
-
-
+        <h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><p>获取网页的标题并保存到条目的标题中，如果条目笔记为空，同时获取网页的描述并保存到条目的笔记中。</p>
+<p>举例子：从 App A 分享网页到井井有条，由于 App A 没有带网页标题过来，所以保存到井井有条的条目标题显示为网址，如果执行此插件，此条目的标题就变成了网页的原标题，不再是网址。</p>
+<h2 id="插件执行条件"><a href="#插件执行条件" class="headerlink" title="插件执行条件"></a>插件执行条件</h2><ul>
+<li>自动触发时，条目标题为空才会执行插件，否则忽略</li>
+<li>手动触发时，如果开启了强制获取标题选择，则一定会执行插件，反之条目标题为空才会执行插件，否则忽略</li>
+</ul>
 
         <div id="react-support-footer-root"></div>
       </div>

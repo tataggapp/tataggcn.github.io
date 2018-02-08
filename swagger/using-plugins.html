@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>井井有条 | 使用插件 </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"使用插件","path":"swagger/using-plugins.html"},"data":{"navigation":{"logo":{"text":"井井有条","type":"link","path":"index.html"},"main":[{"text":"快速指南","type":"link","path":"doc/quick-start.html"},{"text":"如何添加条目","type":"link","path":"doc/how-to-add-an-entry.html"},{"text":"使用插件","type":"link","path":"doc/using-plugins.html"},{"text":"插件","type":"label"},{"text":"添加标签","type":"link","path":"plugin/add-tag.html"},{"text":"获取标题","type":"link","path":"plugin/get-title.html"},{"text":"新浪微博","type":"link","path":"plugin/sina-weibo.html"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot=""><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"/><span class="doc-navbar__logo__text">井井有条</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h2 id="什么是插件"><a href="#什么是插件" class="headerlink" title="什么是插件"></a>什么是插件</h2><p>软件基本功能非常简单，其他扩展功能都以插件的形式提供。<strong>每个相对独立的功能会制作成一个插件，你可以安装不同的插件体验相应的功能。</strong></p>
+<h2 id="工作机制"><a href="#工作机制" class="headerlink" title="工作机制"></a>工作机制</h2><p>插件只会在匹配的条目上执行，执行条件依赖于你设置的匹配规则。插件执行完成后，条目的内容（标题、笔记或者添加标签）会被修改。</p>
+<h2 id="触发时机"><a href="#触发时机" class="headerlink" title="触发时机"></a>触发时机</h2><p>插件可以被自动触发或手动触发。每个插件可以单独设置是否开启自动触发。</p>
+<h3 id="自动触发"><a href="#自动触发" class="headerlink" title="自动触发"></a>自动触发</h3><p>当添加了新的条目后，会尝试执行所有开启了自动触发选项的插件，执行顺序按照 “我的插件” 列表中的排列顺序。如果条目符合当前插件匹配规则，会执行当前插件，执行完之后再尝试执行下一个插件，如果不匹配会忽略当前插件。</p>
+<p>由于插件执行完成后会修改条目的内容，而下一个插件是否会被执行是通过条目的内容来判断是否匹配的，因此不同的执行顺序可能产生不同的结果。<strong>通过长按拖拽可以对 “我的插件”列表进行排序，以保证合适的执行顺序。</strong></p>
+<h3 id="手动触发"><a href="#手动触发" class="headerlink" title="手动触发"></a>手动触发</h3><p>在已经存在的条目上，可以选择手动触发执行插件。步骤如下：</p>
+<ol>
+<li>在条目上左滑</li>
+<li>点击插件按钮</li>
+<li>选择要执行的插件</li>
+</ol>
+<p>手动触发支持批量操作，可以同时选择多个条目，批量执行插件。</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
